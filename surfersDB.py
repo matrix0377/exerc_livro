@@ -1,21 +1,29 @@
 '''
-Código para testar a função find_details
-Lê o arquivo surfing_data.csv
-Aprimorei com o while
-Para sair digite 999 
+Arquivo funcionando perfeitamente e com Looping Loop
+Exercício 172 - Livro: Use a Cabeça!
 '''
+
+import sqlite3
 
 
 def find_details(id2find):
-    surfers_f = open("F:\\vsProjetos2022\exerc_livro\surfing_data.csv", "r")
-    for each_line in surfers_f:
-        s = {}
-        (s['id'], s['name'], s['country'], s['average'],
-         s['board'], s['age']) = each_line.split(';')
-        if id2find == int(s['id']):
-            surfers_f.close()
+    db = sqlite3.connect("surfersDB.sdb")
+    db.row_factory = sqlite3.Row
+    cursor = db.cursor()
+    cursor.execute("select * from surfers")
+    rows = cursor.fetchall()
+    for row in rows:
+        if row['id'] == id2find:
+            s = {}
+            s['id'] = str(row['id'])
+            s['name'] = str(row['name'])
+            s['country'] = str(row['country'])
+            s['average'] = str(row['average'])
+            s['board'] = str(row['board'])
+            s['age'] = str(row['age'])
+            cursor.close()
             return(s)
-    surfers_f.close()
+    cursor.close()
     return({})
 
 

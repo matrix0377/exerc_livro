@@ -10,10 +10,9 @@ import time
 
 password="matrix@@27"
 
-
 def send_to_twitter(msg):
     password_manager = urllib.request.HTTPPasswordMgr()
-    
+    password = "matrix@@27"
     password_manager.add_password("Twitter API", "http://twitter.com/statuses", "@AugustoLivro", password)
     http_handler = urllib.request.HTTPBasicAuthHandler(password_manager)
     page_opener = urllib.request.build_opener(http_handler)
@@ -21,8 +20,7 @@ def send_to_twitter(msg):
     params = urllib.parse.urlencode( {'status': msg} )
     resp = urllib.request.urlopen("http://twitter.com/statuses/update.json", params)
     resp.read()
-    
-    
+  
     
 def get_price():
     page = urllib.request.urlopen("http://beans.itcarlow.ie/prices.html")    
@@ -30,7 +28,8 @@ def get_price():
     where = text.find('= $')
     start_of_price = where + 2
     end_of_price = start_of_price + 4
-    return float(text[start_of_price:end_of_price])
+    return (text[start_of_price:end_of_price])
+
 
 price_now = input("Do you want to see the price now (Y/N)? ")
 
