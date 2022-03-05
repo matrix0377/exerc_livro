@@ -1,5 +1,4 @@
 from tkinter import *
-
 import pygame.mixer
 
 sounds = pygame.mixer
@@ -31,15 +30,26 @@ def play_wrong_sound():
 app = Tk()
 app.title("TVN Game Show")
 app.geometry('300x100+200+100')
+
+l = Label(app, text='When you are ready, click on the buttons!', height = 3)
+l.pack()
+
+
 b1 = Button(app, text = 'Correct!', width = 10, command = play_correct_sound)
 b1.pack(side = 'left', padx = 10, pady = 10)
 
 b2 = Button(app, text='wrong!', width=10, command=play_wrong_sound)
 b2.pack(side='right', padx=10, pady=10)
 
+
 app.mainloop()
 
-print("You asked " + str(number_asked) + " questions.")
+print('-=-' * 15)
+print('\n')
+print("You asked " + str(number_asked) + " questions.\n")
 print(str(number_correct) + " were correctly answered.")
 print(str(number_wrong) + " were answered incorrectly.")
+print('\n')
+print('-=-' * 15)
+
 
