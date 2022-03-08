@@ -1,0 +1,136 @@
+Depoot: 
+eattle, WA
+Description: 
+Books
+Address: 
+1 Main Street
+Anytown
+WA
+
+Depoot: 
+Seattle, WA
+Description: 
+Books
+Address: 
+1 Main Street
+Anytown
+WA
+
+Depoot: 
+Seattle WA
+Description: 
+bag
+Address: 
+5 Main Street
+Anytown
+WA
+
+Depoot: 
+Seattle, WA
+Description: 
+chair
+Address: 
+10 Main street
+Anytown 
+WA
+
+
+Depoot: 
+Seattle, WA
+Description: 
+chair
+Address: 
+10 Main street
+Anytown 
+WA
+
+
+Depoot: 
+Cambridge, UK
+Description: 
+glass
+Address: 
+101 Principal Street
+AnyCity
+LD
+
+Depoot: 
+Seattle, WA
+Description: 
+pencil
+Address: 
+201 Center Street
+AnyCitySeattle
+WA
+
+Depoot: 
+Rome, Italy
+Description: 
+pen
+Address: 
+101 Carnevale Avenue
+Toscana
+TO
+
+Depoot: 
+Rodes, Greece
+Description: 
+pratos
+Address: 
+109, Rua Ermou
+Syntagma
+GR
+
+Depot: 
+Luxor, Egypt
+Description: 
+Embalagem
+Address: 
+205, Cairo
+Alexandria
+MP
+
+Depot: 
+Edinburgh, Scotland
+Description: 
+pecas para veiculos
+Address: 
+1060, Royal Mile
+ED
+
+Depot: 
+Male, Maldives
+Description: 
+Isopor
+Address: 
+3025, Reethigas
+Male
+MV
+
+Depot: 
+None
+Description: 
+Talheres
+Address: 
+6025, Newbury Street
+Washigton DC
+WA
+
+Depot: 
+Dallas, TX
+Description: 
+Relogios
+Address: 
+8300 E Lawter Dr
+Harwood St
+TX
+
+Depot: 
+New York, NY
+Description: 
+Celulares
+Address: 
+10036, Manhattan
+NY
+EUA
+
